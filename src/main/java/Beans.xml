@@ -8,6 +8,7 @@
     
     <context:annotation-config/>
     
+    
     <bean id="humanHeart" class="com.springboot.autowired.Heart">
     	<property name="species" value="human"/>
     	<property name="noOfHearts" value="1"/>
