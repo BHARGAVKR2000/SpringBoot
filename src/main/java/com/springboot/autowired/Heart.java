@@ -1,9 +1,14 @@
 package com.springboot.autowired;
 
+import org.springframework.beans.factory.annotation.Value;
+
 public class Heart {
 
 	private String species;
 	private int noOfHearts;
+	
+	@Value("Heart")
+	private String name;
 
 	public String getSpecies() {
 		return species;
@@ -22,6 +27,6 @@ public class Heart {
 	}
 
 	public void pump() {
-		System.out.println("heart is pumping..");
+		System.out.println(name+" is pumping..");
 	}
 }
